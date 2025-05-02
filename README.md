@@ -39,3 +39,20 @@ ConVmUnet은 CNN과 Vmamba 기반의 VSS(Visual State Space)블록을 융합한 
   - Skip connection을 통해 Encoder의 feature와 결합
   - Segmentation Head를 통해 각 픽셀의 클래스를 예측하는 분할 맵 출력
 
+# Train the Model
+- 먼저, Config.py에서 모델, 데이터셋 경로, 하이퍼파라미터를 수정 후 training 코드 실행
+```
+python experiments/train_model.py
+```
+# Evaluate the Model
+- Config.py에서 테스트 모델과 데이터셋 선택되었는지 확인
+```
+python experiments/test_model.py
+```
+
+# Result
+
+![image](https://github.com/user-attachments/assets/12287aef-f066-4b60-a119-6c603529e17a)
+
+![image](https://github.com/user-attachments/assets/6e6916e3-3d83-4c89-b36f-8c651e1b33bd)
+
